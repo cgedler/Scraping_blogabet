@@ -1,1 +1,5 @@
 /uml/secuence.puml
+/.ropeproject/
+/src/__pycache__/
+/src/excel/__pycache__/
+/src/scraper/__pycache__/
