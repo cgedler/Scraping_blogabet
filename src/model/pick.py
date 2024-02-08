@@ -2,16 +2,18 @@
 # Author     : Christopher Gedler
 
 
-# This is a class for store GRADED PICKS information.
+# This is a class for store PICKS information.
 
 
 class Pick:
     
-    def __init__(self, param1, param2, param3):
-        self.pick_line = param1  
-        self.feed_odd = param2
-        self.data_original_title = param3
+    def __init__(self, url, picks, profit, yields, followers):
+        self._url = url
+        self._picks = picks  
+        self._profit = profit
+        self._yields = yields
+        self._followers = followers
             
     def __str__(self):
-        elements = 'pick-line {}, feed_odd {}, {} ruedas, {}cc'
-        return elements.format(self.pick_line, self.feed_odd, self.data_original_title)
+        elements = 'URL: {}, Picks: {}, Profit: {},  Yields: {}, Followers: {}'
+        return elements.format(self._url, self._picks, self._profit, self._yields, self._followers)
