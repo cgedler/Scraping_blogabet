@@ -41,6 +41,4 @@ if __name__ == '__main__':
             print("Exception, URL return Status Code: " + str(src.scraper.core.getStatusConnectionCode(url)))
     src.excel.tool.writeExcelFile("./resources/output/result.xlsx", listObj)
     print('------ End ------')
-   
     
-
